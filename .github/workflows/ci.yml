@@ -31,16 +31,16 @@ jobs:
       - name: Build app
         run: |
           xcodebuild clean build \
-          -project YourApp.xcodeproj \
-          -scheme YourApp \
+          -project CITestNative.xcodeproj \
+          -scheme CITestNative \
           -sdk iphonesimulator \
           -destination 'platform=iOS Simulator,name=iPhone 14,OS=17.2'
 
       - name: Run tests
         run: |
           xcodebuild test \
-          -project YourApp.xcodeproj \
-          -scheme YourApp \
+          -project CITestNative.xcodeproj \
+          -scheme CITestNative \
           -sdk iphonesimulator \
           -destination 'platform=iOS Simulator,name=iPhone 14,OS=17.2'
 
