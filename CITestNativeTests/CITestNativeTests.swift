@@ -8,10 +8,6 @@
 import Testing
 
 struct CITestNativeTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-    }
     
     @Test func ab() {
         let a = 1
@@ -36,6 +32,13 @@ struct CITestNativeTests {
         let a = 1
         let b = 2
         assert(a * 3 * b == 6)
+    }
+    
+    @Test func acab() {
+        let a = 1
+        let b = 2
+        let c = 5
+        assert(a + c + a + b == 9)
     }
 
 }
