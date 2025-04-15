@@ -31,5 +31,11 @@ struct CITestNativeTests {
         let a = 1
         assert(a * 3 == 3)
     }
+    
+    @Test func aab() {
+        let a = 1
+        let b = 2
+        assert(a * 3 * b == 6)
+    }
 
 }
