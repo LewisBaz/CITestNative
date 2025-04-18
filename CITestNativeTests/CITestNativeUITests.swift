@@ -27,6 +27,7 @@ final class CITestNativeUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+        XCTAssertEqual(app.state, .runningForeground)
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
