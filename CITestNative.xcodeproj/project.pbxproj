@@ -29,6 +29,16 @@
 		F458513D2DAD850F00F95428 /* CITestNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITestNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F414CD432DAF04BF00EFF02D /* Exceptions for "CITestNativeTests" folder in "CITestNativeUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CITestNativeUITests.swift,
+			);
+			target = F458513C2DAD850F00F95428 /* CITestNativeUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F45851242DAD850D00F95428 /* CITestNative */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -37,6 +47,9 @@
 		};
 		F45851362DAD850F00F95428 /* CITestNativeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F414CD432DAF04BF00EFF02D /* Exceptions for "CITestNativeTests" folder in "CITestNativeUITests" target */,
+			);
 			path = CITestNativeTests;
 			sourceTree = "<group>";
 		};
@@ -173,6 +186,7 @@
 					};
 					F458513C2DAD850F00F95428 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = F45851212DAD850D00F95428;
 					};
 				};
@@ -501,6 +515,7 @@
 		F458514E2DAD850F00F95428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GBDSAYFJ49;
@@ -513,6 +528,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_TARGET_NAME = CITestNative;
@@ -523,6 +539,7 @@
 		F458514F2DAD850F00F95428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GBDSAYFJ49;
