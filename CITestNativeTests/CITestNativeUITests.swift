@@ -8,6 +8,8 @@
 import XCTest
 
 final class CITestNativeUITests: XCTestCase {
+    
+    let app = XCUIApplication()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,7 +26,6 @@ final class CITestNativeUITests: XCTestCase {
 
     func testExample() throws {
         // UI tests must launch the application that they test.
-        let app = XCUIApplication()
         app.launch()
 
         XCTAssertEqual(app.state, .runningForeground)
@@ -38,5 +39,14 @@ final class CITestNativeUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    func testStartFlow() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let label = app.staticTexts["test"]
+        XCTAssertTrue(label.waitForExistence(timeout: 3))
+        XCTAssertTrue(label.exists)
     }
 }
